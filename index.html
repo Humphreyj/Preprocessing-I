@@ -12,7 +12,7 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Hepta+Slab|Raleway|Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Dosis|Hepta+Slab|Raleway|Righteous&display=swap" rel="stylesheet">
   <!-- GOOGLE FONTS -->
 </head>
 
@@ -34,18 +34,24 @@
     </header>
 
     <main>
+      <section class="about-me">
+        <p>
+          I am a Front-end Developer passionate about creating efficient, responsive websites. I have a keen attention to <strong>detail</strong>, excellent <strong>communication</strong> skills and a strong sense of <strong>teamwork</strong>. <a href="#">Contact me</a> if you think I'd be a good fit for your team or project.
+        </p>
+        
+      </section>
 
       <section class="portfolio">
           <h1 class="title">Projects</h1>
           <div class="projects">
 
-            <article class="project slide-in align-left active">
+            <article class="project slide-in align-left">
               <h1 class="project-name"><a href="#">Project Name</a></h1>
               <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
               <p class="technologies">HTML, CSS</p>
             </article>
 
-            <article class="project slide-in align-right active">
+            <article class="project slide-in align-right">
                 <h1 class="project-name"><a href="#">Project Name</a></h1>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 <p class="technologies">HTML, CSS</p>
@@ -143,22 +149,35 @@
                     </ul>
                   </article>
         </div>
-
-        
       </section>
       <!-- EXPERIENCE -->
 
-      <!-- <section class="activities">
+      <section class="activities slide-in align-right">
         <h1 class="title">Hobbies</h1>
         <div class="hobbies">
-            <article class="hobby">
-                <h1>"Traditional" archery</h1>
-              </article>
-      
+          <p class="hobby">Traditional Archery</p>
+          <p class="hobby">Tabletop Games</p>
+          <p class="hobby">Buying Games on Steam I don't play.</p>
+          <p class="hobby">Coding. It really has become an obsession.</p>
         </div>
-        
+      </section>
 
-      </section> -->
+      <section class="contact slide-in align-bottom">
+        <h1 class="title">Get ahold of me here.</h1>
+        <form action="#">
+          <div class="client-info">
+              <input type="text" class="name" placeholder="Full Name">
+              <input type="email" class="email" placeholder="E-mail">
+          </div>
+          
+          <input type="text" class="subject" placeholder="Subject">
+          <textarea name="message" id="message"placeholder='Brief Message here!'></textarea>
+          <button class="submit">Submit!</button>
+
+          <a href="tel:555-555-5555">Or just call me.</a>
+
+        </form>
+      </section>
      
         
     </main> 

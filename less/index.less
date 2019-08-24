@@ -71,7 +71,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	line-height: 2em;
-	background-color: #111;
+	
 	
 	
 }
@@ -88,207 +88,274 @@ html, body {
 		.container-desktop();
 	}
 	
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px;
-	font-size: 1em;
-	@media(min-width: 760px) {
-		flex-direction: column;
-	}
-	.personal-info {
-		text-align: center;
-		width: 100%;
-		@media(min-width: 760px) {
-			
-		}
-		
-		strong {
-			display: inline-block;
-			font-weight: bold;
-			font-size: 1.1em;
-			padding-top: .25em;
-			
-		}
-		.name {
-			font-size: 2em;
-			padding: .5em 0em;;
-			
-		}
-	}
-	.other-info	{
-		display: none;	
-		
-		
-		@media(min-width: 760px) {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
-			align-items: center;
-		}
-
-		a {
-			text-decoration: none;
-			color: black;
-		}
-	}
-
-	border-bottom: 2px inset black;
-}
-
-main {
-
-	// SLIDE IN STYLES
-
-.align-left {
-	float: left;
-	margin-right: 20px;
-  }
-
-  .align-right {
-	float: right;
-	margin-left: 20px;
-  }
-.slide-in {
-	transition: all .5s;
-}
-.align-left.slide-in {
-	transform:translateX(-120%) scale(0.95);
-
-}
-
-.align-right.slide-in {
-	transform:translateX(120%) scale(0.95);
-
-}
-
-.slide-in.active {
-	transform: translateX(0%) scale(1);
-}
-// SLIDE IN STYLES
-
-	.title {
-		text-align: center;
-		font-family: 'Bree Serif', serif;
-		font-size: 2.6rem;
-		margin: 1em 0em;
-	}
-	.projects {
+	header {
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		align-items: center;
-		
-		.project {
-			width: 100%;
-			height: 10em;
-			border: 1px solid black;
-			padding: 1em;
-			font-size: 1em;
-			margin: .5em 0em;
+		justify-content: space-between;
+		padding: 10px;
+		font-size: 1em;
+		@media(min-width: 760px) {
+			flex-direction: column;
 		}
-
+		.personal-info {
+			text-align: center;
+			width: 100%;
+			@media(min-width: 760px) {
+				
+			}
+			
+			strong {
+				display: inline-block;
+				font-weight: bold;
+				font-size: 1.1em;
+				padding-top: .25em;
+				
+			}
+			.name {
+				font-size: 2em;
+				padding: .5em 0em;;
+				
+			}
+		}
+		.other-info	{
+			display: none;	
+			
+			
+			@media(min-width: 760px) {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+	
+			a {
+				text-decoration: none;
+				color: black;
+			}
+		}
+	
 		border-bottom: 2px inset black;
 	}
-	//PROJECTS
+	
+	main {
+	
+		// SLIDE IN STYLES
+	
+	.align-left {
+		float: left;
+		margin-right: 20px;
+	  }
+	
+	  .align-right {
+		float: right;
+		margin-left: 20px;
+	  }
+	  .align-bottom.slide-in {
+		  transform: translateY(100%);
+	  }
+	.slide-in {
+		transition: all .5s;
+	}
+	.align-left.slide-in {
+		transform:translateX(-120%) scale(0.95);
+	
+	}
+	
+	.align-right.slide-in {
+		transform:translateX(120%) scale(0.95);
+	
+	}
+	
+	.slide-in.active {
+		transform: translateX(0%) translateY(0%) scale(1);
+	}
+	// SLIDE IN STYLES
+	
+		.title {
+			text-align: center;
+			font-family: 'Bree Serif', serif;
+			font-size: 2.6rem;
+			margin: 1em 0em;
+		}
 
-	.education-and-skills {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		font-size: 1.3em;
-		line-height: 1.8em;
-		
-		.wrapper {
+		.about-me {
+			width: 90%;
+			margin: 0 auto;
+			padding-top: 1em;
+			font-family: 'Dosis', sans-serif;
+			font-weight: 600;
+			text-align: center;
+			font-size: 1.4em;
+			strong {
+				font-family: 'Bree Serif', serif;
+			}
+		}
+		.projects {
 			display: flex;
-			justify-content: space-between;
-
-
-			.education {
-				width: 45%;
-
-				.school {
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			align-items: center;
+			
+			.project {
+				width: 100%;
+				height: 10em;
+				border: 1px solid black;
+				padding: 1em;
+				font-size: 1em;
+				margin: .5em 0em;
+			}
+	
+			border-bottom: 2px inset black;
+		}
+		//PROJECTS
+	
+		.education-and-skills {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 1.3em;
+			line-height: 1.8em;
+			
+			.wrapper {
+				display: flex;
+				justify-content: space-between;
+	
+	
+				.education {
+					width: 45%;
+	
+					.school {
+						display: flex;
+						flex-direction: column;
+						.school-name {
+							font-weight: 800;
+							border-bottom: .17em solid black;
+						}
+						.field-of-study {
+							font-family: 'Raleway', sans-serif
+						}
+					}
+				}
+		
+				.skills {
+					width: 50%;
 					display: flex;
 					flex-direction: column;
-					.school-name {
-						font-weight: 800;
-						border-bottom: .17em solid black;
+					align-items: center;
+					justify-content: space-evenly;
+					font-family: 'Righteous', cursive;
+					flex-wrap: wrap;
+					border: .005em solid black;
+	
+					.skill {
+						width: 34%;
+						text-align: center;
+						vertical-align: middle;
+						padding-top: 10%;
+						margin: 0 auto;
 					}
-					.field-of-study {
-						font-family: 'Raleway', sans-serif
+				}
+			}
+			padding-bottom: 1em;
+			border-bottom: 2px inset black;
+		}
+		// EDUCATION AND SKILLS
+	
+		.experience {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 1em 0em;
+			font-size: 1.6em;
+	
+			.jobs {
+				width: 100%;
+	
+				.job {
+					border: 1px solid black;
+					padding: 0% 3%;
+					margin: 1em 0em;
+	
+					.job-description {
+	
+						.descriptor {
+							list-style: square;
+							list-style-position: inside;
+						}
 					}
 				}
 			}
 	
-			.skills {
-				width: 50%;
+			border-bottom: 2px inset black;
+		}
+		// EXPERIENCE
+	
+		.activities {
+			width: 100%;
+			.hobbies {
+			
+				text-align: center;
+				background-color: white;
 				display: flex;
 				flex-direction: column;
-				align-items: center;
 				justify-content: space-evenly;
-				font-family: 'Righteous', cursive;
-				flex-wrap: wrap;
-				border: .005em solid black;
-
-				.skill {
-					width: 34%;
+				align-items: center;
+				font-size: 1.6em;
+				padding-bottom: 1.3em;
+		
+				.hobby {
+					
 					text-align: center;
-					vertical-align: middle;
-					padding-top: 10%;
-					margin: 0 auto;
+					padding: .25em 0em;
 				}
+	
+				
 			}
+			border-bottom: 2px inset black;
+			margin-bottom: 2em;
 		}
-		padding-bottom: 1em;
-		border-bottom: 2px inset black;
-	}
-	// EDUCATION AND SKILLS
+		// ACTIVITIES
 
-	.experience {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		padding: 1em 0em;
-		font-size: 1.6em;
+		.contact {
+			form {
+				display: flex;
+				flex-direction: column;
+				a{
+					text-align: center;
+					color: black;
+				}
+				input {
+					margin: .5em 0em;
+				}
+				.client-info {
+					width: 100%;
+					margin: 0 auto;
+					display: flex;
+					justify-content: space-between;
 
-		.jobs {
-			width: 100%;
-
-			.job {
-				border: 1px solid black;
-				padding: 0% 3%;
-				margin: 1em 0em;
-
-				.job-description {
-
-					.descriptor {
-						list-style: square;
-						list-style-position: inside;
+					input {
+						width: 80%;
 					}
 				}
 			}
+			button {
+				width: 60%;
+				margin: 0 auto;
+				background: none;
+				border: .15em solid black;
+				font-family: 'Righteous', cursive;
+				font-size: 1.3em;
+				margin-top: .5em;
+			}
 		}
-
-		border-bottom: 2px inset black;
+		// FORM
+	
+	
 	}
-	// EXPERIENCE
-
-	.hobbies {
-		display: flex;
-		justify-content: space-evenly;
-		font-size: 1.6em;
-
-		.hobby {
-			width: 45%;
-		}
-	}
-
-
+	// MAIN
 }
-// MAIN
+
+
