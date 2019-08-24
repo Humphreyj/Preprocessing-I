@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>My Resume</title>
 
@@ -11,15 +12,17 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Hepta+Slab|Raleway|Righteous&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONTS -->
 </head>
 
 <body>
   <div class="container">
     <header>
         <div class="personal-info">
-            <h1 class="name">Joshua A. Humphrey</h1>
-            <h2>Front-End Developer</h2>
-            <h3>Austin, Tx</h3>
+            <h1 class="name">Joshua A. Humphrey. <strong>Front-End Developer</strong></h1>
+            
+            <h3>Austin, <strong>Tx</strong></h3>
         </div>
 
         <div class="other-info">
@@ -35,26 +38,31 @@
       <section class="portfolio">
           <h1 class="title">Projects</h1>
           <div class="projects">
-            <article class="project">
-              <h1 class="project-name">Project Name</h1>
+
+            <article class="project slide-in align-left active">
+              <h1 class="project-name"><a href="#">Project Name</a></h1>
               <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
               <p class="technologies">HTML, CSS</p>
             </article>
-            <article class="project">
-                <h1 class="project-name">Project Name</h1>
+
+            <article class="project slide-in align-right active">
+                <h1 class="project-name"><a href="#">Project Name</a></h1>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 <p class="technologies">HTML, CSS</p>
               </article>
-              <article class="project">
-                  <h1 class="project-name">Project Name</h1>
+
+              <article class="project slide-in align-left">
+                  <h1 class="project-name"><a href="#">Project Name</a></h1>
                   <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                   <p class="technologies">HTML, CSS</p>
                 </article>
-                <article class="project">
-                    <h1 class="project-name">Project Name</h1>
+
+                <article class="project slide-in align-right">
+                    <h1 class="project-name"><a href="#">Project Name</a></h1>
                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <p class="technologies">HTML, CSS</p>
                   </article>
+
           </div>
           <!-- PROJECTS -->
       </section>
@@ -66,7 +74,7 @@
 
           <h1 class="title">Education and skills</h1>
         <div class="wrapper">
-          <section class="education">
+          <section class="education slide-in align-left">
             <div class="school">
               <h3 class="school-name">Lambda School Academy of Computer Science and Web Development.</h3>
               <h3 class="field-of-study">Full Stack Web Development</h3>
@@ -88,7 +96,7 @@
     
       </section>
       <!-- EDUCATION -->
-      <section class="skills">
+      <section class="skills slide-in align-right">
         <h3 class="skill">HTML5</h3>
         <h3 class="skill">CSS3</h3>
         <h3 class="skill">JavaScript</h3>
@@ -101,11 +109,60 @@
     <!-- WRAPPER -->
       </section>
       <!-- EDUCATION AND SKILLS -->
-      <h1 class="title">Experience</h1>
+      <section class="experience">
+        <h1 class="title">Experience</h1>
+
+        <div class="jobs">
+            <article class="job slide-in align-left">
+                <h3 class="job-title">Freelance Web Developer</h3>
+                <h3 class="dates-employed">2018 - Present</h3>
+                <ul class="job-description">
+                  <li class="descriptor">Worked with clients to design and deploy responsive websites that drove a marked increase in business probably.</li>
+                  <li class="descriptor">Adapted design and updated content as per client requests.</li>
+                  <li class="descriptor">Waited a really long time for feedback.</li>
+                </ul>
+              </article>
+      
+              <article class="job slide-in align-right">
+                  <h3 class="job-title">Sour Duck Market - Line Cook</h3>
+                  <h3 class="dates-employed">Currently employed</h3>
+                  <ul class="job-description">
+                    <li class="descriptor">Did a serious amount of prep.</li>
+                    <li class="descriptor">Did a serious amount of cleaning.</li>
+                    <li class="descriptor">Cooked like 100 burgers/sandwiches a day.</li>
+                  </ul>
+                </article>
+      
+                <article class="job slide-in align-left">
+                    <h3 class="job-title">Cantine Italian Cafe - Chef de Cusine</h3>
+                    <h3 class="dates-employed">2015 - 2017</h3>
+                    <ul class="job-description">
+                      <li class="descriptor">Worked closely with executive chef to create menu items and specials.</li>
+                      <li class="descriptor">Refined Kitchen opertaing procedures resulting in an overall increase in efficiency.</li>
+                      <li class="descriptor">Managed and mentored a team of 8 cooks to a moderate degree of success.</li>
+                    </ul>
+                  </article>
+        </div>
+
+        
+      </section>
+      <!-- EXPERIENCE -->
+
+      <!-- <section class="activities">
+        <h1 class="title">Hobbies</h1>
+        <div class="hobbies">
+            <article class="hobby">
+                <h1>"Traditional" archery</h1>
+              </article>
+      
+        </div>
+        
+
+      </section> -->
      
         
     </main> 
   </div>
-  
+  <script type="text/javascript" src='resume.js'></script>
 </body>
 </html>
