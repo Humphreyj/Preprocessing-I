@@ -55,8 +55,9 @@ table {
 
 // MIXINS MIXINS MIXINS MIXINS
 .container-tablet {
-	width: 80%;
-	margin: 0 auto
+	width: 85%;
+	margin: 0 auto;
+	
 }
 
 .container-desktop {
@@ -64,6 +65,11 @@ table {
 }
 
 // MIXINS MIXINS MIXINS MIXINS
+
+// VARIABLES VARIABLES VARIABLES VARIABLES
+@navigation-hover: #461212;
+@button-hover: #065499;
+// VARIABLES VARIABLES VARIABLES VARIABLES
 
 
 
@@ -75,12 +81,15 @@ html, body {
 	
 	
 	
+	
 }
 
 .container {
 	padding: 1%;
 	font-family: 'Hepta Slab', serif;
-	background-color: white;
+	background-color: black;
+	
+	
 
 	@media(min-width: 760px) {
 		.container-tablet();
@@ -90,6 +99,7 @@ html, body {
 	}
 	
 	header {
+		background-color: white;
 		display: flex;
 		justify-content: space-between;
 		padding: 10px;
@@ -101,7 +111,8 @@ html, body {
 			text-align: center;
 			width: 100%;
 			@media(min-width: 760px) {
-				
+				display: flex;
+				flex-direction: column;
 			}
 			
 			strong {
@@ -119,25 +130,33 @@ html, body {
 		}
 		.other-info	{
 			display: none;	
-			
-			
+			a {
+				text-decoration: none;
+				color: black;
+				font-weight: 600;
+				transition: all .3s ease;
+			}
 			@media(min-width: 760px) {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-evenly;
 				align-items: center;
 			}
-	
-			a {
-				text-decoration: none;
-				color: black;
+			@media(min-width: 1000px) {
+				a:hover {
+					color:#461212;
+					border-bottom: .1em solid #461212; 
+					text-shadow: 2px 2px 2px #111;
+				}
 			}
+			
 		}
 	
 		border-bottom: 2px inset black;
 	}
 	
 	main {
+		background-color: white;
 	
 		// SLIDE IN STYLES
 	
@@ -189,6 +208,13 @@ html, body {
 			strong {
 				font-family: 'Bree Serif', serif;
 			}
+			a {
+				color: black;
+			}
+			@media(min-width: 760px) {
+				font-size: 1.8em;
+				line-height: 1.8em;
+			}
 		}
 		.projects {
 			display: flex;
@@ -196,14 +222,27 @@ html, body {
 			flex-wrap: wrap;
 			justify-content: space-evenly;
 			align-items: center;
+			padding: 1%;
 			
 			.project {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: space-evenly;
 				width: 100%;
 				height: 10em;
 				border: 1px solid black;
 				padding: 1em;
-				font-size: 1em;
+				font-size: 1.8em;
 				margin: .5em 0em;
+				@media(760px) {
+					font-size: 2em;
+				}
+				a {
+					color: black;
+					font-weight: bold;
+				}
+				
 			}
 	
 			border-bottom: 2px inset black;
@@ -217,6 +256,10 @@ html, body {
 			align-items: center;
 			font-size: 1.3em;
 			line-height: 1.8em;
+			padding: 0% 1%;
+			@media(min-width: 760px) {
+				
+			}
 			
 			.wrapper {
 				display: flex;
@@ -255,6 +298,9 @@ html, body {
 						vertical-align: middle;
 						padding-top: 10%;
 						margin: 0 auto;
+						@media(min-width:760px) {
+							padding-top: 4%;
+						}
 					}
 				}
 			}
@@ -269,7 +315,7 @@ html, body {
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			padding: 1em 0em;
+			padding: 1em 1%;
 			font-size: 1.6em;
 	
 			.jobs {
@@ -322,6 +368,7 @@ html, body {
 		// ACTIVITIES
 
 		.contact {
+			padding: 0% 1%;
 			form {
 				display: flex;
 				flex-direction: column;
@@ -331,6 +378,7 @@ html, body {
 				}
 				input {
 					margin: .5em 0em;
+					height: 2.6em;
 				}
 				.client-info {
 					width: 100%;
@@ -339,7 +387,7 @@ html, body {
 					justify-content: space-between;
 
 					input {
-						width: 80%;
+						width: 49%;
 					}
 				}
 			}
@@ -351,13 +399,51 @@ html, body {
 				font-family: 'Righteous', cursive;
 				font-size: 1.3em;
 				margin-top: .5em;
+				
+				@media(min-width: 760px) {
+					width: 40%;
+				}
+				
 			}
+			@media(min-width: 1000px) {
+				 button {
+					 width: 25%;
+				 }
+				button:hover {
+					background-color: @button-hover;
+					color: white;
+					text-shadow: 1px 1px 1px #111;
+				}
+			}
+
+			.call-me {
+				display: inline-block;
+				font-size: 1.6em;
+				padding: 3%;
+				font-family: 'Inconsolata', monospace;
+				
+			}
+			
+
+
 		}
 		// FORM
 	
 	
 	}
 	// MAIN
+
+	footer {
+		background-color: #111;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		width: 100%;
+		a{
+			color: white;
+			padding: 5%;
+			
+		}
+
+	}
 }
-
-
