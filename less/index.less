@@ -215,6 +215,12 @@ html, body {
 				font-size: 1.8em;
 				line-height: 1.8em;
 			}
+			@media(min-width: 1000px) {
+				a:hover {
+					color:#461212;
+					border-bottom: .1em solid #461212; 
+					text-shadow: 2px 2px 2px #111;
+				}
 		}
 		.projects {
 			display: flex;
@@ -399,6 +405,7 @@ html, body {
 				font-family: 'Righteous', cursive;
 				font-size: 1.3em;
 				margin-top: .5em;
+				transition: all .3s ease;
 				
 				@media(min-width: 760px) {
 					width: 40%;
