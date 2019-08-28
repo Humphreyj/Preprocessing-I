@@ -131,7 +131,7 @@ table {
   box-sizing: border-box;
 }
 .container-tablet {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 .container-desktop {
@@ -147,11 +147,11 @@ body {
 .container {
   padding: 1%;
   font-family: 'Hepta Slab', serif;
-  background-color: black;
+  background-color: white;
 }
 @media (min-width: 760px) {
   .container {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
   }
 }
@@ -161,7 +161,6 @@ body {
   }
 }
 .container header {
-  background-color: white;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -177,12 +176,6 @@ body {
   text-align: center;
   width: 100%;
 }
-@media (min-width: 760px) {
-  .container header .personal-info {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .container header .personal-info strong {
   display: inline-block;
   font-weight: bold;
@@ -196,12 +189,6 @@ body {
 .container header .other-info {
   display: none;
 }
-.container header .other-info a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
 @media (min-width: 760px) {
   .container header .other-info {
     display: flex;
@@ -210,15 +197,9 @@ body {
     align-items: center;
   }
 }
-@media (min-width: 1000px) {
-  .container header .other-info a:hover {
-    color: #461212;
-    border-bottom: 0.1em solid #461212;
-    text-shadow: 2px 2px 2px #111;
-  }
-}
-.container main {
-  background-color: white;
+.container header .other-info a {
+  text-decoration: none;
+  color: black;
 }
 .container main .align-left {
   float: left;
@@ -261,44 +242,21 @@ body {
 .container main .about-me strong {
   font-family: 'Bree Serif', serif;
 }
-.container main .about-me a {
-  color: black;
-}
-@media (min-width: 760px) {
-  .container main .about-me {
-    font-size: 1.8em;
-    line-height: 1.8em;
-  }
-}
 .container main .projects {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1%;
   border-bottom: 2px inset black;
 }
 .container main .projects .project {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
   width: 100%;
   height: 10em;
   border: 1px solid black;
   padding: 1em;
-  font-size: 1.8em;
+  font-size: 1em;
   margin: 0.5em 0em;
-}
-@media (760px) {
-  .container main .projects .project {
-    font-size: 2em;
-  }
-}
-.container main .projects .project a {
-  color: black;
-  font-weight: bold;
 }
 .container main .education-and-skills {
   display: flex;
@@ -307,7 +265,6 @@ body {
   align-items: center;
   font-size: 1.3em;
   line-height: 1.8em;
-  padding: 0% 1%;
   padding-bottom: 1em;
   border-bottom: 2px inset black;
 }
@@ -346,18 +303,13 @@ body {
   padding-top: 10%;
   margin: 0 auto;
 }
-@media (min-width: 760px) {
-  .container main .education-and-skills .wrapper .skills .skill {
-    padding-top: 4%;
-  }
-}
 .container main .experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1em 1%;
+  padding: 1em 0em;
   font-size: 1.6em;
   border-bottom: 2px inset black;
 }
@@ -393,9 +345,6 @@ body {
   text-align: center;
   padding: 0.25em 0em;
 }
-.container main .contact {
-  padding: 0% 1%;
-}
 .container main .contact form {
   display: flex;
   flex-direction: column;
@@ -406,7 +355,6 @@ body {
 }
 .container main .contact form input {
   margin: 0.5em 0em;
-  height: 2.6em;
 }
 .container main .contact form .client-info {
   width: 100%;
@@ -415,7 +363,7 @@ body {
   justify-content: space-between;
 }
 .container main .contact form .client-info input {
-  width: 49%;
+  width: 80%;
 }
 .container main .contact button {
   width: 60%;
@@ -425,37 +373,4 @@ body {
   font-family: 'Righteous', cursive;
   font-size: 1.3em;
   margin-top: 0.5em;
-  transition: all 0.3s ease;
-}
-@media (min-width: 760px) {
-  .container main .contact button {
-    width: 40%;
-  }
-}
-@media (min-width: 1000px) {
-  .container main .contact button {
-    width: 25%;
-  }
-  .container main .contact button:hover {
-    background-color: #065499;
-    color: white;
-    text-shadow: 1px 1px 1px #111;
-  }
-}
-.container main .contact .call-me {
-  display: inline-block;
-  font-size: 1.6em;
-  padding: 3%;
-  font-family: 'Inconsolata', monospace;
-}
-.container footer {
-  background-color: #111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.container footer a {
-  color: white;
-  padding: 5%;
 }
